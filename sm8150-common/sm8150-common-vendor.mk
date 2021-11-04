@@ -7,8 +7,14 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8150-common/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    vendor/xiaomi/sm8150-common/proprietary/etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml \
+    vendor/xiaomi/sm8150-common/proprietary/etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml \
+    vendor/xiaomi/sm8150-common/proprietary/etc/permissions/vendor.xiaomi.hardware.misys.V3_0-permission.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.xiaomi.hardware.misys.V3_0-permission.xml \
     vendor/xiaomi/sm8150-common/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/sm8150-common/proprietary/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
+    vendor/xiaomi/sm8150-common/proprietary/framework/vendor.xiaomi.hardware.misys-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.xiaomi.hardware.misys-V1.0-java.jar \
+    vendor/xiaomi/sm8150-common/proprietary/framework/vendor.xiaomi.hardware.misys-V2.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.xiaomi.hardware.misys-V2.0-java.jar \
+    vendor/xiaomi/sm8150-common/proprietary/framework/vendor.xiaomi.hardware.misys.V3_0.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.xiaomi.hardware.misys.V3_0.jar \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
@@ -129,6 +135,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8150-common/proprietary/vendor/bin/hw/vendor.qti.hardware.soter@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter@1.0-service \
     vendor/xiaomi/sm8150-common/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/xiaomi/sm8150-common/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
+    vendor/xiaomi/sm8150-common/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.misys@1.0-service \
+    vendor/xiaomi/sm8150-common/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.misys@2.0-service \
+    vendor/xiaomi/sm8150-common/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.misys@3.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.misys@3.0-service \
     vendor/xiaomi/sm8150-common/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/xiaomi/sm8150-common/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
     vendor/xiaomi/sm8150-common/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
@@ -252,6 +261,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8150-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/xiaomi/sm8150-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/xiaomi/sm8150-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
+    vendor/xiaomi/sm8150-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc \
+    vendor/xiaomi/sm8150-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc \
+    vendor/xiaomi/sm8150-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc \
     vendor/xiaomi/sm8150-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
     vendor/xiaomi/sm8150-common/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/xiaomi/sm8150-common/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
@@ -508,6 +520,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so \
+    vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.misys@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.misys@1.0-impl.so \
+    vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so \
+    vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.misys@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.misys@3.0-impl.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.adreno.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscmservice.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
@@ -566,6 +581,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/libcdfw_remote_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw_remote_api.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
+    vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/libcheckpid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcheckpid.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
@@ -614,6 +630,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_api.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice_glue.so \
+    vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/liblogwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblogwrap_vendor.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_client.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_wifihal.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
@@ -797,6 +814,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.0.so \
+    vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.misys@1.0.so \
+    vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.misys@2.0.so \
+    vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.misys@3.0.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mlipay@1.0.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mlipay@1.1.so \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so \
@@ -830,4 +850,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-qti \
     manifest_android.hardware.drm@1.3-service.widevine \
     manifest_vendor.xiaomi.hardware.mlipay \
-    vendor.qti.gnss@4.0-service
+    vendor.qti.gnss@4.0-service \
+    vendor.xiaomi.hardware.misys@1.0 \
+    vendor.xiaomi.hardware.misys@2.0 \
+    vendor.xiaomi.hardware.misys@3.0
