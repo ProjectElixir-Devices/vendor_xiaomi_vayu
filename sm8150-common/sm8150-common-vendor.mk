@@ -40,13 +40,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/framework/qti-telephony-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qti-telephony-common.jar \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/fm_helium.so \
-    vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmctmgr.so \
-    vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmfdmgr.so \
-    vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/libdpmframework.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmframework.so \
-    vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/libdpmtcm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmtcm.so \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libfm-hci.so \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmosal.so \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmparser_lite.so \
@@ -70,7 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsinkinterface.so \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrc.so \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrcinterface.so \
-    vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.diaghal@1.0.so \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.fm@1.0.so \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.ant@1.0.so \
@@ -852,6 +846,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleHEXAGON \
     QtiTelephonyService \
     WfdService \
+    dpmserviceapp \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
