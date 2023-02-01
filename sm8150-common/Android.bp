@@ -101,9 +101,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "HotwordEnrollmentOKGoogleHEXAGON",
+	name: "HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND",
 	owner: "xiaomi",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -113,9 +113,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "HotwordEnrollmentXGoogleHEXAGON",
+	name: "HotwordEnrollmentXGoogleHEXAGON_WIDEBAND",
 	owner: "xiaomi",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -263,24 +263,6 @@ dex_import {
 	name: "tcmclient",
 	owner: "xiaomi",
 	jars: ["proprietary/framework/tcmclient.jar"],
-}
-
-dex_import {
-	name: "vendor.xiaomi.hardware.misys-V1.0-java",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/vendor.xiaomi.hardware.misys-V1.0-java.jar"],
-}
-
-dex_import {
-	name: "vendor.xiaomi.hardware.misys-V2.0-java",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/vendor.xiaomi.hardware.misys-V2.0-java.jar"],
-}
-
-dex_import {
-	name: "vendor.xiaomi.hardware.misys.V3_0",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/vendor.xiaomi.hardware.misys.V3_0.jar"],
 }
 
 dex_import {
@@ -443,6 +425,15 @@ prebuilt_etc_xml {
 	name: "vendor.xiaomi.hardware.misys@3.0",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.xiaomi.hardware.misys@4.0",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@4.0.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
